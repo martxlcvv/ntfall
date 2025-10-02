@@ -1,0 +1,318 @@
+/* ===================== GLOBAL STYLES ===================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1b1b1b;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1; /* push footer to bottom */
+}
+
+/* ===================== BANNER VIDEO / GIF ===================== */
+.banner-video {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .banner-video {
+    max-height: 320px;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-video {
+    max-height: 240px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ===================== BANNER TEXT ===================== */
+.banner-box h1 {
+  font-family: 'Creepster', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  color: #e63946 !important;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.banner-box p {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+  background-color: #000 !important;
+}
+
+.navbar-brand {
+  font-family: 'Creepster', cursive;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: #e63946 !important;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.nav-link {
+  color: #f0f0f0 !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #e63946 !important;
+}
+
+/* ===================== HEADERS ===================== */
+h2 {
+  color: #e63946;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* ===================== LISTS ===================== */
+.list-group-item {
+  background: #2b2b2b;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+.list-group-item:hover {
+  background: #3c3c3c;
+  color: #e63946;
+}
+
+/* ===================== CARDS ===================== */
+.card {
+  background: #2b2b2b;
+  border: none;
+  color: #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  color: #e63946;
+  font-weight: bold; /* bold character names */
+  text-align: center;
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+  background-color: #000;
+  border-top: 3px solid #575555;
+  margin-top: auto;
+}
+
+/* ===================== SECTIONS ===================== */
+section {
+  background: #222;
+  border-radius: 10px;
+  margin: 2rem auto;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  display: block;
+}
+
+section.hidden {
+  display: none;
+}
+
+/* ===================== ENEMY NAMES ===================== */
+#levels .enemy-name {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;  /* bold enemy names */
+  font-size: 1.2rem;
+  color: #e63946;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#levels .card p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+/* ===================== LEVEL & CONTACT HEADINGS ===================== */
+#levels .card-title,
+#contact h5 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #e63946;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#levels .card p,
+#contact p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+/* ===================== IMAGES ===================== */
+.enemy-img {
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 2px solid #444;
+}
+
+.about-img {
+  max-width: 280px;
+  height: auto;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===================== MECHANICS SECTION ===================== */
+#mechanics .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#mechanics .col-md-6 {
+  flex: 1 1 300px;
+  max-width: 450px;
+  text-align: center;
+}
+
+#mechanics h5 {
+  color: #e63946;
+  margin-top: 1rem;
+}
+
+#mechanics ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  margin: 0 auto 1rem auto;
+  text-align: left;
+}
+
+#mechanics ul li {
+  color: #ddd;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===================== ABOUT SECTION CENTER ===================== */
+#about {
+  text-align: center;
+}
+
+#about h2 {
+  color: #e63946;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  color: #ddd;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 1rem auto;
+}
+
+#about .about-img {
+  display: block;
+  margin: 1rem auto 0 auto;
+}
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+@media (max-width: 768px) {
+  .banner-box {
+    padding: 1.5rem;
+  }
+
+  .banner-video,
+  .banner-img {
+    max-height: 160px;
+  }
+
+  .banner-box h1 {
+    font-size: 1.6rem;
+  }
+
+  .banner-box p {
+    font-size: 0.9rem;
+  }
+
+  .about-img {
+    max-width: 85%;
+  }
+
+  .enemy-img {
+    height: 130px;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-box {
+    padding: 1rem;
+  }
+
+  .banner-video,
+  .banner-img {
+    max-height: 140px;
+  }
+
+  .banner-box h1 {
+    font-size: 1.3rem;
+  }
+
+  .banner-box p {
+    font-size: 0.8rem;
+  }
+
+  .about-img {
+    max-width: 100%;
+  }
+
+  .enemy-img {
+    height: 110px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
